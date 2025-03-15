@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Leituras</title>
+</head>
+<body>
+    <div layout:fragment="content">
+        <p th:text="${mensagem}"></p>
+        <h1>Lista de leituras</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Logger</th>
+                    <th>Valor</th>
+                    <th>Data</th>
+                    <th>Responsavel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="leitura : ${lista}">
+                    <td th:text="${leitura.idLogger()}"></td>
+                    <td th:text="${leitura.valor()}"></td>
+                    <td th:text="${leitura.data()}"></td>
+                    <td th:text="${leitura.responsavel()}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

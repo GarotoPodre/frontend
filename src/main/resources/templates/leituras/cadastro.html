@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Leituras</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <p th:text="${mensagem}"></p>
+    <form method="post" action="/leituras/gravacao">
+        <label for="logger">Logger</label>
+        <input id="logger" name="idLogger">
+        <br/>
+        <label for="valor">Valor</label>
+        <input id="valor" name="valor">
+        <br/>
+        <label for="data">Data</label>
+        <input id="data" name="data">
+        <br/>
+        <label for="responsavel">Responsavel</label>
+        <input id="responsavel" name="responsavel">
+        <br/>
+        <input type="submit" value="GRAVAR">
+    </form>
+</div>
+</body>
+</html>
