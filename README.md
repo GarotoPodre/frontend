@@ -14,8 +14,11 @@ de como fazer da melhor forma. A princípio, como disse, usei javascript, que n�
 mesmo.
 <br/>
 <h1>🧰Funcionalidades</h1>
-- Permite inserção, leitura de leituras
-- Permite autenticação no frontend
+<ul>
+<li>Permite inserção, leitura de leituras</li> 
+<li>Permite autenticação no frontend</li> 
+</ul>
+
 <h1>🚧Status do projeto</h1> 
 <ul>
 <li>endpoints para leitura[x]</li> 
